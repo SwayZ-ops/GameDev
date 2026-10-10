@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Castle Crashers",
+            "request": "launch",
+            "mainClass": "castlecrashers.Main",
+            "cwd": "${workspaceFolder}",
+            "classPaths": [
+                "$Auto",
+                "${workspaceFolder}/resources"
+            ],
+            "vmArgs": "--module-path \"${workspaceFolder}/lib/javafx-sdk-26.0.2/lib\" --add-modules javafx.controls,javafx.media --enable-native-access=javafx.graphics,javafx.media -Djava.library.path=\"${workspaceFolder}/lib/javafx-sdk-26.0.2/bin\""
+        }
+    ]
+}
