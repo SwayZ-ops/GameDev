@@ -182,7 +182,7 @@ public class AppManager {
     }
 
     public void showGameOver() {
-        show(new GameOverView(this).getRoot());
+        show(new GameOverView(this, controller).getRoot());
         SoundManager.playGameOverMusic();
     }
 
